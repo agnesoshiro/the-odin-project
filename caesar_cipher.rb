@@ -1,4 +1,4 @@
-# Test input: caesar_cipher("Hello, World", 5)
+# Test input: caesar_cipher("Hello, World!", 5)
 # Test output: Mjqqt, Btwqi!
 
 def caesar_cipher(string, shift_factor)
@@ -7,7 +7,6 @@ def caesar_cipher(string, shift_factor)
   keys = (1..26).to_a
   index = keys.zip(letters).to_h
 
-  string = "Hello, World!"
   string_new = ""
 
   (string.chars).each do |char|
